@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="2026.2.5">
+<PsychoPy2experiment encoding="utf-8" version="2026.2.4">
   <Settings>
     <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
     <Param val="" valType="str" updates="None" name="Completed URL"/>
@@ -69,33 +69,6 @@
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
-      <TextComponent name="stimulus_text" plugin="None">
-        <Param val="white" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="False" valType="code" updates="constant" name="draggable"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Arial" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="stimulus_text" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.0" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="$stimulus" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="code" updates="None" name="validator"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
       <KeyboardComponent name="response" plugin="None">
         <Param val="'return'" valType="list" updates="set every repeat" name="allowedKeys"/>
         <Param val="$corrAns" valType="str" updates="constant" name="correctAns"/>
@@ -110,11 +83,57 @@
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="0.7" valType="code" updates="constant" name="stopVal"/>
         <Param val="first key" valType="str" updates="constant" name="store"/>
         <Param val="True" valType="bool" updates="constant" name="storeCorrect"/>
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
+      <ImageComponent name="stimulus_image" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="$stimulus" valType="file" updates="set every repeat" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="stimulus_image" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.696, 0.9)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="0.7" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+      </ImageComponent>
+      <CodeComponent name="code" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="if ((trials.thisN === 0)) {&amp;#10;    gameClock = new util.Clock();&amp;#10;    n_trials = 0;&amp;#10;    n_correct = 0;&amp;#10;    hit_rts = [];&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="if trials.thisN == 0:&amp;#10;    gameClock = core.Clock()&amp;#10;    n_trials = 0&amp;#10;    n_correct = 0&amp;#10;    hit_rts = []" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="n_trials += 1;&amp;#10;n_correct += response.corr;&amp;#10;if ((response.keys &amp;&amp; (condition === &quot;threat&quot;))) {&amp;#10;    hit_rts.push(response.rt);&amp;#10;}&amp;#10;accuracy = ((100 * n_correct) / n_trials);&amp;#10;if (hit_rts) {&amp;#10;    rt_line = `Mean reaction time: ${util.pad(Number.parseFloat(((1000 * util.sum(hit_rts)) / hit_rts.length)).toFixed(0), 1)} ms`;&amp;#10;} else {&amp;#10;    rt_line = &quot;Mean reaction time: no gun hits&quot;;&amp;#10;}&amp;#10;result_text = `Correct: ${n_correct} / ${n_trials}&amp;#10;Accuracy: ${util.pad(Number.parseFloat(accuracy).toFixed(0), 1)}%&amp;#10;${rt_line}&amp;#10;&amp;#10;Thank you for participating`&amp;#10;;&amp;#10;if ((gameClock.getTime() &gt;= 30)) {&amp;#10;    trials.finished = true;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="n_trials += 1&amp;#10;n_correct += response.corr&amp;#10;if response.keys and condition == 'threat':&amp;#10;    hit_rts.append(response.rt)&amp;#10;&amp;#10;accuracy = 100 * n_correct / n_trials&amp;#10;if hit_rts:&amp;#10;    rt_line = f'Mean reaction time: {1000 * sum(hit_rts) / len(hit_rts):.0f} ms'&amp;#10;else:&amp;#10;    rt_line = 'Mean reaction time: no gun hits'&amp;#10;result_text = f'Correct: {n_correct} / {n_trials}\nAccuracy: {accuracy:.0f}%\n{rt_line}\n\nThank you for participating'&amp;#10;&amp;#10;if gameClock.getTime() &gt;= 30:&amp;#10;    trials.finished = True" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
     </Routine>
     <Routine name="instructions">
       <RoutineSettingsComponent name="instructions" plugin="None">
@@ -225,7 +244,7 @@
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="0.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="2 + random()" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="+" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
@@ -264,15 +283,15 @@
         <Param val="text_3" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, 0.3)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="3.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="13" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="&amp;#10;&amp;#10;Thank you for participing" valType="str" updates="constant" name="text"/>
+        <Param val="$result_text" valType="str" updates="set every repeat" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
@@ -282,13 +301,13 @@
   <Flow>
     <Routine name="instructions"/>
     <LoopInitiator loopType="TrialHandler" name="trials">
-      <Param name="Selected rows" updates="None" val="" valType="code"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('stimulus', '!'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'O'), ('condition', 'safe'), ('corrAns', None)])]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="psychopy/conditions.csv" valType="file"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('stimulus', 'Drawings/Camera/IMG_1818.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Camera/IMG_1819.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Camera/IMG_1820.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Camera/IMG_1821.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Camera/IMG_1822.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Camera/IMG_1823.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Camera/IMG_1824.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Camera/IMG_1825.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Camera/IMG_1826.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Camera/IMG_1827.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Camera/IMG_1828.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Camera/IMG_1829.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Camera/IMG_1830.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Camera/IMG_1831.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Camera/IMG_1832.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Camera/IMG_1833.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Camera/IMG_1834.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1789.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1790.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1791.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1792.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1793.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1794.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1795.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1796.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1797.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1798.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1799.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1800.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1801.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1802.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1803.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1804.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1805.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1806.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1807.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1808.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1809.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1810.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1811.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1812.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1813.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1814.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1815 2.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1815.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/IMG_1817.PNG'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Gun/Untitled_Artwork.png'), ('condition', 'threat'), ('corrAns', 'return')]), OrderedDict([('stimulus', 'Drawings/Nothing/IMG_1835.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Nothing/IMG_1836.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Nothing/IMG_1837.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Nothing/IMG_1838.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Nothing/IMG_1839.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Nothing/IMG_1840.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Nothing/IMG_1841.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Nothing/IMG_1842.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Nothing/IMG_1843.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Nothing/IMG_1844.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Nothing/IMG_1845.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Nothing/IMG_1846.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Nothing/IMG_1847.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1848.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1849.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1850.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1851.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1852.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1853.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1854.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1855.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1856.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1857.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1858.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1859.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1860.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1861.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1862.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1863.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1864.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1865.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1866.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1867.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1868.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1869.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1870.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1871.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1872.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1873.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1874.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1875.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1876.PNG'), ('condition', 'safe'), ('corrAns', None)]), OrderedDict([('stimulus', 'Drawings/Phone/IMG_1877.PNG'), ('condition', 'safe'), ('corrAns', None)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="conditions.csv" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="code"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
-      <Param name="nReps" updates="None" val="10" valType="code"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
       <Param name="name" updates="None" val="trials" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
